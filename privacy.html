@@ -1,10 +1,197 @@
----
-layout: default
-title: 隐私政策
----
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 – Wild Nomads</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-# 隐私政策
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      min-height: 100vh;
+    }
 
-Wild Nomads 尊重并保护所有用户的个人隐私权。本应用不会收集、存储或分享您的任何个人数据。
+    /* ── Top bar ── */
+    .topbar {
+      background: linear-gradient(135deg, #2c5f8a 0%, #3a9c6e 100%);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .topbar a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.15s;
+    }
+    .topbar a:hover { color: #fff; }
+    .topbar span { color: rgba(255,255,255,0.5); }
+    .topbar .app-name {
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
 
-更新日期：2026年
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg, #2c5f8a 0%, #3a9c6e 100%);
+      color: #fff;
+      padding: 48px 24px 56px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      opacity: 0.82;
+      font-size: 0.95rem;
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 720px;
+      margin: -24px auto 0;
+      padding: 0 24px 64px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 40px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    }
+
+    .card section { margin-bottom: 32px; }
+    .card section:last-child { margin-bottom: 0; }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.1em;
+      background: linear-gradient(#2c5f8a, #3a9c6e);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .card p {
+      font-size: 0.97rem;
+      line-height: 1.75;
+      color: #555;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #eef6f2, #e8f1f8);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .divider { border: none; border-top: 1px solid #eee; margin: 0 0 32px; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #aaa;
+      border-top: 1px solid #e4e8ed;
+    }
+    footer a { color: #3a9c6e; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 520px) {
+      .card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="./index.html">← 返回支持页面</a>
+    <span>/</span>
+    <span class="app-name">Wild Nomads</span>
+  </div>
+
+  <div class="hero">
+    <h1>🔒 隐私政策</h1>
+    <p>Privacy Policy &nbsp;·&nbsp; 最后更新：2026年3月</p>
+  </div>
+
+  <div class="content">
+    <div class="card">
+
+      <section>
+        <h2>概述</h2>
+        <p>Wild Nomads（以下简称"本应用"）高度重视并保护每位用户的个人隐私权。本隐私政策说明我们如何处理您的信息。</p>
+      </section>
+
+      <hr class="divider" />
+
+      <section>
+        <h2>数据收集</h2>
+        <div class="highlight-box">
+          ✅ &nbsp;本应用<strong>不会收集、存储或分享</strong>您的任何个人数据。<br />
+          我们不要求注册账户，也不追踪您的使用行为。
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <section>
+        <h2>权限说明</h2>
+        <p>本应用仅在核心功能所需的最低权限范围内运行，所有数据处理均在您的设备本地完成，不会传输至任何服务器。</p>
+      </section>
+
+      <hr class="divider" />
+
+      <section>
+        <h2>第三方服务</h2>
+        <p>本应用不集成任何第三方广告 SDK 或数据分析服务，不向任何第三方提供或出售用户数据。</p>
+      </section>
+
+      <hr class="divider" />
+
+      <section>
+        <h2>政策变更</h2>
+        <p>如本政策发生重大变更，我们将通过应用内通知或本页面及时告知。继续使用本应用即表示您接受更新后的政策。</p>
+      </section>
+
+      <hr class="divider" />
+
+      <section>
+        <h2>联系我们</h2>
+        <p>如您对本隐私政策有任何疑问，欢迎通过以下方式联系我们：<br />
+          <a href="mailto:support@wildnomads.cn" style="color:#3a9c6e;font-weight:600;">support@wildnomads.cn</a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <a href="./index.html">← 返回支持页面</a>
+    &nbsp;·&nbsp;
+    &copy; 2026 Wild Nomads · All rights reserved
+  </footer>
+
+</body>
+</html>
