@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Nomads</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: #f5f7fa;
+      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    main {
+      width: min(100% - 40px, 420px);
+      padding: 30px;
+      border: 1px solid #e4e8ed;
+      border-radius: 20px;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(29, 54, 75, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #1a1a2e;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin: 0 0 20px;
+      color: #667085;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #2f855f;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>正在跳转</h1>
+    <p>如果页面没有自动跳转，请返回 Wild Nomads 官方支持首页。</p>
+    <a href="/">返回首页</a>
+  </main>
+
+  <script>
+    (function () {
+      var pathname = window.location.pathname.replace(/\/+$/, "");
+      var params = new URLSearchParams(window.location.search);
+      var action = "";
+
+      if (pathname === "/reset-password") {
+        action = "reset-password";
+      } else if (pathname === "/verify-email") {
+        action = "verify-email";
+      }
+
+      if (!action) {
+        return;
+      }
+
+      params.set("action", action);
+      window.location.replace(window.location.origin + "/?" + params.toString());
+    })();
+  </script>
+</body>
+</html>
